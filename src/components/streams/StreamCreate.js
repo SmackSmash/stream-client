@@ -35,9 +35,11 @@ class StreamCreate extends Component {
       <form onSubmit={this.props.handleSubmit(this.onFormSubmit)} className="ui form error">
         <Field name="title" component={this.renderInput} label="Title" />
         <Field name="description" component={this.renderInput} label="Description" />
-        <button type="submit" className="ui button primary">
-          Submit
-        </button>
+        <div className="field">
+          <button type="submit" className="ui button primary">
+            Submit
+          </button>
+        </div>
       </form>
     );
   }
